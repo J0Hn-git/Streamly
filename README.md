@@ -1,16 +1,30 @@
-# React + Vite
+Streamly - Netflix Clone 🍿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional Netflix-inspired movie streaming platform built with React.js and Firebase.
 
-Currently, two official plugins are available:
+🚀 Features
+* Firebase Authentication: Secure Sign-in and Sign-up functionality.
+* Real-time Database: User data managed via Cloud Firestore.
+* Dynamic Movie Data: Fetches the latest movies and trailers using the TMDB API.
+* Responsive UI: Fully responsive design with a custom video player.
+* Interactive Toasts: User-friendly notifications via `react-toastify`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
+* Frontend: React.js, CSS3
+* Backend/Database: Firebase (Auth & Firestore)
+* API: The Movie Database (TMDB)
+* Routing: React Router DOM
 
-## React Compiler
+--------------------------------------------------------------------------------------------
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img width="1903" height="934" alt="image" src="https://github.com/user-attachments/assets/b609842a-8738-419c-a69c-70b314a0ca7c" />
 
-## Expanding the ESLint configuration
+----------------------------------------------------------------------------------------
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="1901" height="936" alt="image" src="https://github.com/user-attachments/assets/45ff1b3f-5f35-4b6d-97a4-0f5596b776ff" />
+
+-------------------------------------------------------------------------------------
+
+<img width="1916" height="924" alt="image" src="https://github.com/user-attachments/assets/b4cfd446-fe75-4a04-ba35-ec0dbed0d4ec" />
+
+
