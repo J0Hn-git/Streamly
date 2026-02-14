@@ -9,14 +9,28 @@ const Login = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const user_auth = async (event) => {
         event.preventDefault();
-        if(signState==="Sign In"){
-            await login(email, password);
-        }else{
-            await signup(name, email, password);
+        console.log("Auth started for: ", email);
+        setLoading(true);
+
+        try{
+            if(signState==="Sign In"){
+                console.log("Attempting Login with :", email);
+                await login(email, password);
+            }else{
+                console.log("Attempting singup with: ", name, email);
+                await signup(name, email, password);
         }
+        console.log("Auth function finished");
+        } catch (error) {
+            console.log("Auth Eror details: ", error.code, error.message);
+            alert(error.message);
+            setLoading(false);
+        }
+        
     }
 
     return (
@@ -36,7 +50,13 @@ const Login = () => {
                     <input value={password} onChange={(e) => {setPassword(e.target.value)}}
                     type="password" placeholder="Password"/>
 
-                    <button onClick={user_auth} type="submit">{signState}</button>
+                    <button onClick={user_auth} type="submit" disabled={loading}>
+                        {loading ? (
+                            <div className="login-spinner"></div>
+                        ) : (
+                            signState
+                        )}
+                    </button>
 
                     <div className="form-help">
                         <div className="remember">
